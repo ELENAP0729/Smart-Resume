@@ -2,7 +2,8 @@
 import { useEffect, useState } from 'react';
 
 type AnyObj = Record<string, any>;
-const API = 'http://127.0.0.1:8000';
+//const API = 'http://127.0.0.1:8000';
+const API = 'https://smart-resume-3pkt.onrender.com';
 
 function List({ items }: { items?: string[] }) {
   if (!items || items.length === 0) return <p className="empty">No data yet.</p>;
